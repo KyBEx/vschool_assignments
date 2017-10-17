@@ -1,0 +1,41 @@
+.mainheader, .subheader {
+  font-family: "Georgia";
+  text-align: center;
+  width: 750
+}
+.mainheader {
+  color: darkgreen;
+}
+
+p {
+  line-height: 25px;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration:underline;
+}
+
+.image {
+  float: left;
+  padding: 10px;
+  height: 300;
+}
+
+.space3 {
+  text-align: left;
+  display: block;
+  width: 500
+}
+.space1, .space2 {
+  overflow: auto;
+  display:block;
+  width: 375
+}
