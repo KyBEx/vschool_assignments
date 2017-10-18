@@ -1,0 +1,13 @@
+.column {
+    column-count: 3;
+    column-width: 5px;
+    height: 300px;
+}
+
+
+p {
+    margin: auto;
+}
+h1 {
+
+}
