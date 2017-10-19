@@ -81,8 +81,8 @@ for (var i = 0; i < 3; i++) {
     grid3[i] = 0;
     masterGrid[i] = grid1;
 }
-// console.log(grid1, grid2, grid3);
-// console.log(masterGrid);
+console.log(grid1, grid2, grid3);
+console.log(masterGrid);
 
 var masterGrid2 = [];
 for (var i = 0; i < 3; i++) {
