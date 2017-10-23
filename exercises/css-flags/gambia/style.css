@@ -1,0 +1,33 @@
+.parent {
+    height: 475px;
+    width: 700px;
+    position: relative;
+}
+
+.child {
+    position: absolute;
+}
+
+.blue {
+    background-color: blue;
+    height: 90px;
+    width: 700px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.green{
+    background-color: green;
+    bottom: 0;
+
+}
+
+.red {
+    background-color: red;
+    top: 0;
+}
+
+.big {
+    height: 165px;
+    width: 700px;
+}

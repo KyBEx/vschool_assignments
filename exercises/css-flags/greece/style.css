@@ -1,0 +1,64 @@
+.parent {
+    height: 495px;
+    width: 800px;
+    position: relative;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+
+}
+.corner {
+    position: absolute;
+    height: 275px;
+    width: 275px;
+    left: 0;
+    top: 0;
+    background-color: #0d5eaf;
+    z-index: +1;
+    padding: 0px;
+    margin: 0px;
+}
+
+.child {
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.vertical {
+    height: 275px;
+    width: 55px;
+}
+
+.horizontal {
+    height: 55px;
+    width: 275px;
+}
+
+.row {
+    height: 55px;
+    width: 800px;
+    position: absolute;
+    top: 0;
+}
+
+.blue {
+    background-color:#0d5eaf;
+}
+
+.r2 {
+    transform:translateY(200%);
+}
+
+.r3 {
+    transform:translateY(400%);
+}
+.r4 {
+    transform:translateY(600%);
+}
+
+.r5 {
+    transform:translateY(800%);
+}

@@ -1,0 +1,31 @@
+.parent {
+    height: 500px;
+    width: 699px;
+    position: relative;
+}
+
+.child {
+    height: 500px;
+    width: 233px;
+    position: absolute;
+}
+
+.blue {
+    background-color: blue;
+
+    left: 0;
+}
+
+.white {
+    background-color: white;
+
+    left: 0;
+    transform: translatex(100%);
+
+}
+
+.red {
+    background-color: red;
+
+    right: 0;
+}
