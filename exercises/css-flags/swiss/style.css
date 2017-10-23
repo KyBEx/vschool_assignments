@@ -1,0 +1,24 @@
+.parent {
+    height: 600px;
+    width: 600px;
+    position: relative;
+    background-color: red;
+}
+
+.child {
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.vertical {
+    height: 410px;
+    width: 125px;
+}
+
+.horizontal {
+    height: 125px;
+    width: 410px;
+}

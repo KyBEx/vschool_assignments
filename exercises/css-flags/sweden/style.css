@@ -1,0 +1,26 @@
+.parent {
+    height: 600px;
+    width: 900px;
+    position: relative;
+    background-color: #006aa7;
+}
+
+.child {
+    background-color: #fecc00;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.vertical {
+    height: 600px;
+    width: 125px;
+    transform: translate(-160%, -50%);
+}
+
+.horizontal {
+    height: 125px;
+    width: 900px;
+
+}

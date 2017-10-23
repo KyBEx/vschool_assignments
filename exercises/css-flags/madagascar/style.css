@@ -1,0 +1,36 @@
+body {
+    background-color: grey;
+}
+
+.parent {
+    height: 526px;
+    width: 725px;
+    position: relative;
+}
+
+.child {
+    position: absolute;
+}
+
+.white {
+    height: 526px;
+    width: 240px;
+    left: 0;
+    background-color: white;
+}
+
+.red {
+    background-color: #fc3d32;
+    height: 263px;
+    width: 485.2px;
+    right: 0;
+    top: 0;
+}
+
+.green{
+    background-color: #007e3a;
+    height: 263px;
+    width: 485.2px;
+    right: 0;
+    bottom:0;
+}

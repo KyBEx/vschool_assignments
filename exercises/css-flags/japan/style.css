@@ -1,0 +1,19 @@
+.parent {
+    height: 560px;
+    width: 730px;
+    position: relative;
+    background-color: white;
+    position: relative;
+    border: solid black 2px;
+}
+
+.circle {
+    width: 285px;
+    height: 285px;
+    background-color: red;
+    border-radius: 150px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
