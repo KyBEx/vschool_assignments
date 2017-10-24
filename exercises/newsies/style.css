@@ -1,4 +1,4 @@
-#container {
+body {
     vertical-align: middle;
     margin-left: auto;
     margin-right: auto;
@@ -6,7 +6,7 @@
     text-align: center;
 }
 
-.column {
+#whole-body {
     column-count: 3;
     column-width: 5px;
     height: auto;

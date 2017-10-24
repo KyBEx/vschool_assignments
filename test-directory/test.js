@@ -18,8 +18,19 @@
 // myStar2();
 // console.log(stars2);
 
-if (1 < 2) {
-    console.log("interesting");
-} if ( 2 < 3 ){
-    console.log("not equal");
-}
+// if (1 < 2) {
+//     console.log("interesting");
+// } if ( 2 < 3 ){
+//     console.log("not equal");
+// }
+
+var myArray = ["tree", "plant", "tree", "leaf", "life", "laugh", "tree"];
+var x = [];
+console.log(x);
+for (var i = 0; i < myArray.length; i++) {
+  if (myArray[i] === "tree") {
+      x.push(i);
+  }
+};
+
+console.log(x);

@@ -5,9 +5,12 @@
 
 body {
     margin: auto;
-    width: 80%;
+    width: 45%;
 }
 
+div {
+    border: white solid;
+}
 #top {
     color: #F5C6D6;
     background-color: #F5C6D6;
