@@ -38,7 +38,4 @@ document.addEventListener("keydown", function(key) {
     } else if (key.which === 89) {
         blueBox.style.backgroundColor = "yellow";
     }
-}
-)
-
-console.dir();
+});
