@@ -1,0 +1,12 @@
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: black;
+    background-color: aliceblue;
+}
+
+.navbar-default .navbar-brand {
+    color: dodgerblue;
+}
+
+.dropdown-toggle-left {
+    background-color: aliceblue;
+}

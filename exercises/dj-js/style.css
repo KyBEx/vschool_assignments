@@ -1,0 +1,15 @@
+body {
+    position: relative;
+}
+
+
+#box {
+    display: inline-block;
+    background-color: purple;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+}
