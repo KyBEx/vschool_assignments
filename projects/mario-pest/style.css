@@ -1,0 +1,138 @@
+body {
+    margin: 0px;
+    position: relative;
+}
+
+#container {
+    position: relative;
+    height: 300px;
+}
+
+
+
+#banner {
+    height: 300px;
+    width: 100%;
+}
+
+#welcome {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -100%);
+    color: white;
+    font-family: chalkduster;
+    font-size: 50px;
+
+}
+
+#list-row {
+    height: 350px;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+.row {
+    display: inline-block;
+    height: 300px;
+    position: absolute;
+    width: 538px;
+    border: solid black 3px;
+}
+
+.baddie {
+    display:block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.bomb {
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.cheep {
+    left:100%;
+    transform: translateX(-100%);
+}
+
+h1 {
+    text-align: center;
+    color: blue;
+    margin: 10px;
+}
+
+.goomba>p{
+    position: relative;
+    font-size: 55px;
+    color: orangered;
+    margin: 5px;
+    margin-bottom: 30px;
+    /* left: 50%; */
+    top: 50%;
+    /* transform: translate(-20%, -50%); */
+    text-align: center;
+    transform: translateY(-150%);
+}
+
+.bomb>p{
+    position: relative;
+    font-size: 55px;
+    color: orangered;
+    margin: 5px;
+    margin-bottom: 30px;
+    /* left: 50%; */
+    top: 50%;
+    /* transform: translate(-20%, -50%); */
+    text-align: center;
+    transform: translateY(-150%);
+}
+
+.cheep>p{
+    position: relative;
+    font-size: 55px;
+    color: orangered;
+    margin: 5px;
+    margin-bottom: 30px;
+    /* left: 50%; */
+    top: 50%;
+    /* transform: translate(-20%, -50%); */
+    text-align: center;
+    transform: translateY(-150%);
+}
+
+#form {
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    position:relative;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+#calculate {
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 20px;
+    left: 50%;
+    transform:translateX(-50%);
+}
+
+.footer {
+    font-size: 15px;
+}

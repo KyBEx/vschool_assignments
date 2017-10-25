@@ -1,0 +1,21 @@
+.parent {
+    height: 525px;
+    width: 725px;
+    position: relative;
+}
+
+.top {
+    background-color: #D21034;
+    top: 0;
+    height: 100%;
+
+/*.middle {
+    background-color: red;
+    top: 0;
+    transform: translateY(100%);
+}
+
+.bottom {
+    background-color: #ffff00;
+    bottom: 0;
+}*/
