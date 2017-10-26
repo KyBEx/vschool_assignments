@@ -8,14 +8,44 @@
     background-color: #D21034;
     top: 0;
     height: 100%;
+    z-index: -1;
+}
 
-/*.middle {
-    background-color: red;
-    top: 0;
-    transform: translateY(100%);
+.mid {
+    display: inline-block;
+    position: absolute;
+        /* top: 50%; */
+        /* transform: translate(50%, -50%); */
+    background-color: #007E3A;
+    height: 260px;
+    width: 450px;
+    top: 25%;
+    transform: translateX(30%);
+
 }
 
 .bottom {
     background-color: #ffff00;
     bottom: 0;
-}*/
+}
+.circle1 {
+    width: 170px;
+    height: 170px;
+    background-color: white;
+    border-radius: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-28%, -50%);
+}
+
+.circle2 {
+    width: 170px;
+    height: 170px;
+    background-color: #007E3A;
+    border-radius: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-11%, -50%);
+}
