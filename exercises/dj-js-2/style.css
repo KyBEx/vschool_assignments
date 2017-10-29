@@ -1,0 +1,84 @@
+.box {
+    height: 300px;
+    width: 300px;
+    background-color: black;
+    margin: 20px;
+    display: inline-block;
+}
+
+#box1 {
+    height: 300px;
+    width: 300px;
+    background-color: black;
+    margin: 20px;
+    border-radius: none;
+    box-shadow: none;
+    transition: all 1s 2s ease-in;
+}
+
+#box1:hover {
+    background-color: blue;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+#box2 {
+    height: 300px;
+    width: 300px;
+    background-color: black;
+    margin: 20px;
+    border-radius: none;
+    box-shadow: none;
+    transition-property: margin, box-shadow, display;
+    transition-delay: 1s;
+    transition-duration: 4s;
+    transition-timing-function: linear;
+}
+
+#box2:hover {
+    margin: 30px;
+    box-shadow: 10px 10px 5px grey;
+    display: block;
+
+}
+
+#box3 {
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border: solid black 2px;
+    margin: 20px;
+    border-radius: none;
+    box-shadow: none;
+    transition: all 3s .5s ease-out;
+    position: relative;
+}
+
+#box3:hover {
+    background-color: black;
+    color: white;
+    border: dotted yellow 5px;
+
+}
+p {
+    text-align: center;
+    top: 50%;
+    transform: translate(130%, -150%);
+    position: absolute
+}
+
+#box4 {
+    background-color: black;
+    margin: 20px;
+    border-radius: none;
+    box-shadow: none;
+    transition: all 1s 2s ease-in;
+    opacity: .5;
+
+}
+
+#box4:hover {
+    width: 150px;
+    opacity: .1;
+}
