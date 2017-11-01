@@ -1,0 +1,65 @@
+
+
+
+{
+    "appetizers": [
+        {
+            "name":"Spicy Pickles",
+            "ingredients":"Artisan cucumbers, locally-sourced garlic, all-natural dill",
+            "description":"Eat our pickles.  They are the best"
+        },
+        {
+            "name":"Hush Puppies",
+            "ingredients": "cornmeal, savory side made of mayo, spicy mustard, and secret sauce",
+            "description":"The best puppies you've had or your money back"
+        },
+        {
+            "name":"Spicy Sliders",
+            "ingredients":"grass-fed beef, jalapeno, habanero, blend of seasoning",
+            "description":"So good they'd tempt the most devout Hindu"
+        }
+    ],
+    "cold sandwiches": [
+        {
+            "name": "Turkey Club",
+            "ingredients": "bread, sliced turkey, havarti cheese, spicy mayo",
+            "description": "Makes you wish it was Thanksgiving"
+        },
+        {
+            "name":"Ham and Cheese",
+            "ingredients":"ham, cheese, bread, butter",
+            "description":"Just like they make it in France"
+        }
+    ],
+    "hot sandwiches": [
+        {
+            "name":"Open faced Turkey",
+            "ingredients": "whole wheat bread, gravy, turkey breast, cheese",
+            "description": "Pairs well with pie"
+        }
+    ],
+    "desserts": [
+        {
+            "name":"Chocolate Cake",
+            "ingredients":"Eggs, milk, flour, chocolate",
+            "description":"You know you want it"
+        },
+        {
+            "name": "Sundae Funday",
+            "ingredients": "ice cream, stuff and things",
+            "description": "Don't overthink it ..."
+        }
+    ],
+    "drinks": [
+        {
+            "name":"Water",
+            "ingredients":"Water",
+            "description":"It's water"
+        },
+        {
+            "name":"Hot chocolate",
+            "ingredients":"milk, chocolate powder",
+            "description":"Tasty"
+        }
+    ]
+}
