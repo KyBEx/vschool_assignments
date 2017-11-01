@@ -1,14 +1,32 @@
+body {
+    position: relative;
+}
+
+.table-container {
+    display: inline-block;
+}
+
+.list-control {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 25px;
+}
+
+
+
 table {
+    display: inline-block;
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 100%;
+    width: 600px;
 }
 
 
 th, td {
     border:solid black 2px;
     height: 40px;
-    width: 100px;
+    width: 200px;
     margin: 0px;
     padding: 0px;
 }
@@ -17,4 +35,8 @@ th {
     font-size: 20px;
     background-color: black;
     color: white;
+}
+
+form {
+    display: block;
 }
