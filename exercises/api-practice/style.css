@@ -40,3 +40,8 @@ th {
 form {
     display: block;
 }
+
+img {
+    height: 100px;
+    width: 100px;
+}
