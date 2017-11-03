@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#navbar {
+
+    background-color: cadetblue;
+    left:0;
+    width:100%;
+    position: fixed;
+    top: 0;
+    height: 50px;
+
+
+
+
+}
+
+#navbar>a{
+    float: left;
+    /*display: block; doesn't look like it is needed*/
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+
+a:hover{
+    background-color: darkgreen;
+}
+
+.post {
+    margin: 70px auto 0 auto;;
+    width: 600px;
+    /*margin-top: 70px;*/
+    /*z-index: -1;*/
+}
+h2 {
+    margin-bottom: 0px;
+}
+
+h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+h6{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+img {
+    float: left;
+    padding-right: 10px;
+    /*padding-bottom: 5px;*/
+}
