@@ -91,7 +91,8 @@ button.addEventListener("click", function(){
         "price": document.getElementById("newPrice").value,
         "imgUrl": document.getElementById("url").value
     };
-    axios.post("https://api.vschool.io/kyle/todo/", newTodo).then(function(response){
+    axios.post("https://api.vschool.io/kyle/todo/", newTodo)
+    .then(function(response){
         location.reload(true);
     });
 })
