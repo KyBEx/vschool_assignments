@@ -1,5 +1,5 @@
 var chai = require('chai');
-var assert = chair.assert;
+var assert = chai.assert;
 var checkWord = require('./app.js');
 
 
