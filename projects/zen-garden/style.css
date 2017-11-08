@@ -1,3 +1,23 @@
+* {
+    box-sizing: border-box;
+    /*font-size: 0px;*/
+}
+
+@font-face {
+    font-family: verdemoderna;
+    src: url(verdemoderna.woff);
+}
+
+@font-face {
+    font-family: librebaskerville;
+    src: url(http://fonts.gstatic.com/s/librebaskerville/v5/QHIOz1iKF3bIEzRdDFaf5fbsUggLxuOzHNuXcSFlTaY.woff2);
+}
+
+@font-face {
+    font-family: juliussansone;
+    src: url(http://fonts.gstatic.com/s/juliussansone/v6/iU65JP9acQHPDLkdalCF7pbhOpL-vLTkIjCTuVYsuO0.woff2);
+}
+
 html {
     height: 100%;
     width: 100%;
@@ -10,69 +30,118 @@ body {
 }
 
 .container {
+    position: relative;
     width: 100%;
     height: 100%;
 }
 
-.row.top {
-    position: absolute;
+.row{
+    position: relative;
     height: 300px;
     width: 100%;
-
+    background-image: url(http://www.csszengarden.com/214/contours.png), url(http://www.csszengarden.com/214/noise.png), url(http://www.csszengarden.com/214/gridlines.png), url(http://www.csszengarden.com/214/huntington.jpg);
+    background-position: 0 0, 0 0, -5px -25px, 0 120%;
+    background-size: auto,auto,auto,cover;
+    background-attachment: fixed, fixed, fixed, fixed;
 }
 
 #top-left{
-    position:absolute;
+    position:relative;
     height: 100%;
-    width: 100%;
-    background-color: blue;
+    width: 67%;
+    background-color: white;
     display: inline-block;
     top: 0;
-    /*opacity: .2;*/
+    opacity: .1;
+}
+
+#circle {
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    margin-left: 150px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#header1{
+    position: absolute;
+    width:auto;
+    margin-left: 275px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    /*color: white;*/
+    color: white;
+    top: 50%;
+    transform: translateY(-105%);
+    font-family: juliussansone;
+
+}
+
+#header2{
+    position: absolute;
+    width:auto;
+    margin-left: 275px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    top: 50%;
+    transform: translateY(-10%);
+    font-family: librebaskerville;
+    color: #A1B3B1;
+
 }
 
 #top-right {
     position: absolute;
     right:0;
+    top: 0;
     height:100%;
-    width: 500px;
-    background-color: green;
-    /*z-index: 1;*/
+    width: 33%;
     display:inline-block;
-    /*opacity: .2;*/
 }
 
 #viewall{
     position: relative;
     display: block;
-    /*margin: auto auto;*/
-    margin-left: auto;
-    margin-right: 75px;
-    top: 25%;
-    transform: translateY(-85%);
+    right: 0px;
+    margin:auto;
+    top: 35%;
+    padding-left: 100px;
+    padding-right: 100px;
     height: 70px;
-    width: 350px;
-    font-size: 20px;
-    background-color: white;
+    width: auto;
+    background-color: rgba(255,255,255, .1);
     border: none;
-    z-index: 2
+    font-family: juliussansone;
 
+}
 
+#viewall:hover {
+    background: rgba(255,255,255, .3);
+    transition: all .5s linear 0s;
+}
+
+#viewall>p {
+    z-index: 5;
+    color: rgba(255,255,255, 1);
+    font-weight: 600;
+    font-size: 20px;
 }
 
 .middle {
     position: relative;
-    height: 1000px;
+    height: 700px;
     width: 100%;
     background-color: black;
-    top: 230px;
+    /*top: 300px;*/
 }
 
 #big-left {
     position:absolute;
     height: 100%;
-    width: 100%;
-    background-color: grey;
+    width: 67%;
+    background-color: white;
     display: inline-block;
     top: 0;
 
@@ -82,8 +151,8 @@ body {
     position: absolute;
     right:0;
     height:100%;
-    width: 500px;
-    background-color: beige;
+    width: 33%;
+    background-color: #E1EAE5;
     /*z-index: 1;*/
     display:inline-block;
 }
@@ -98,17 +167,19 @@ body {
 
 .body1 {
     position: relative;
-    height: 700px;
+    height: 600px;
     width: 100%;
-    background-color: black;
-    top: 230px;
+    background-color: rgba(138,188,159,0.5);
+    background-image: url(http://www.csszengarden.com/214/contours-opaque.png), url(http://www.csszengarden.com/214/gridlines-opaque.png), url(http://www.csszengarden.com/214/bamboo.png);
+    background-attachment: scroll, scroll, fixed;
+    /*top: 300px;*/
 }
 
 #body1-left{
     position:absolute;
     height: 100%;
-    width: 100%;
-    background-color: purple;
+    width: 67%;
+    /*background-color: #E1EAE5;*/
     display: inline-block;
     top: 0;
 }
@@ -117,9 +188,89 @@ body {
     position: absolute;
     right:0;
     height:100%;
-    width: 500px;
+    width: 33%;
+    background-color: #6d9a83;
+    /*z-index: 1;*/
+    display:inline-block;
+    opacity: .2;
+
+}
+
+.body2 {
+    position: relative;
+    height: 600px;
+    width: 100%;
     background-color: black;
+    /*top: 300px;*/
+}
+
+#body2-left{
+    position:absolute;
+    height: 100%;
+    width: 67%;
+    background-color: white;
+    display: inline-block;
+    top: 0;
+}
+
+#body2-right {
+    position: absolute;
+    right:0;
+    height:100%;
+    width: 33%;
+    background-color: #E1EAE5;
     /*z-index: 1;*/
     display:inline-block;
 
+}
+
+#footer1 {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    background-image: url(http://www.csszengarden.com/214/contours.png), url(http://www.csszengarden.com/214/noise.png), url(http://www.csszengarden.com/214/gridlines.png), url(http://www.csszengarden.com/214/huntington.jpg);
+    background-size: auto, auto, auto, cover;
+    /*top: 300px;*/
+}
+
+#footer2 {
+    position: relative;
+    font-family: verdemoderna;
+    height: 150px;
+    width: 100%;
+    background-color: #143A3E;
+    /*top: 300px;*/
+
+}
+
+ul {
+    position: absolute;
+    padding-left: 0px;
+    list-style-type: none;
+    /* margin-top: 0px; */
+    /* margin: auto; */
+    left: 50%;
+    top: 25%;
+    transform: translate(-20%, -15%);
+    width: 100%;
+
+}
+
+li {
+    padding-right: 100px;
+    position: relative;
+    display: inline;
+    float: left;
+    font-size: 70px;
+    color: #8A9D9F;
+}
+
+
+li:last-child {
+    padding-right: 0px;
+}
+
+.body, .hbody {
+    font-family: juliussansone;
+    padding-left: 100px;
 }
