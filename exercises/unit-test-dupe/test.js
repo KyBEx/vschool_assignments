@@ -5,13 +5,11 @@
 
 const chai = require('chai');
 let assert = chai.assert;
-let duplicates = require('./app.js');
-let dupeSearch = require('./app.js')
+let returnDupesOnce = require('./app.js')
 
-describe("Search a block of text for repeating words.  If a word repeats, display that one instance of the word in a separate array.", function() {
+describe("Search a block of text for repeating words.  If a word repeats, display that one instance of each word in a separate array.", function() {
     it("Should fail if a duplicate word appears more than once in the array", function() {
-        duplicates = ["Word", "Word", "new"];
-        assert.
+        assert.deepEqual(returnDupesOnce("Test a a This this is a test Test"), ["a", "test", "this"])
 
     })
 })
