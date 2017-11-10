@@ -41,5 +41,5 @@ describe("A function to check if an argument is the same forwards and backwards"
     });
     it('should return true if the argument contains punc and is a palindrome', function(){
         assert.equal(palindrome('tAco! CAt!'), palindrome('tacocat'));
-    });
+    })
 })
