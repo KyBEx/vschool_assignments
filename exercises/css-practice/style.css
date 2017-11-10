@@ -1,0 +1,43 @@
+
+
+/*.test1{
+    background-color: green;
+    width: 500px;
+    color: white;
+    font-size: 40px;
+
+    height: 300px;
+
+}*/
+
+
+/*.test {
+    background-color: blue;
+    color: white;
+    display: flex;
+}*/
+
+.flex-container {
+    display: flex;
+    background-color: blue;
+    flex-direction: column;
+}
+
+.flex-container div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding:20px;
+  width: 100px;
+  font-size: 30px;
+  /*color: black;*/
+  /*display: inline;*/
+}
+
+/*.flex {
+    color: white;
+    display: inline;
+}*/
+
+/*.test2 {
+    background-color: yellow;
+}*/

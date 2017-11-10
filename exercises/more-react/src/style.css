@@ -1,0 +1,15 @@
+
+#navlist {
+    float: left;
+    display: inline;
+    list-style-type: none;
+    padding: 0px;
+
+}
+
+.item {
+    color: red;
+    display: inline;
+    padding-left: 0px;
+    padding-right: 10px;
+}
