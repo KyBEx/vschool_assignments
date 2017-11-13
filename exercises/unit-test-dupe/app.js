@@ -29,6 +29,17 @@ function returnDupesOnce (str) {
 
 // console.log(returnDupesOnce(search));
 
+let x = (num) => num * num
+
+console.log(x(3))
+
+const arr = [1, 2, 3, 1, 4, 4, "sam"];
+const newArr = arr.filter((index, position, array) => {
+    return array.indexOf(index) === position;
+    console.log(array.indexOf(index));
+})
+console.log(newArr)
+
 
 
 
