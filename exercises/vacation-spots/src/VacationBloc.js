@@ -4,7 +4,7 @@ function VacationBloc (props) {
 
 const blocStyle = {
     item: {
-        height: "150px",
+        height: "200px",
         width: "150px",
         border: "1px solid #829356",
         position: "relative",

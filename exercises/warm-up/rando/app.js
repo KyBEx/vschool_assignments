@@ -15,15 +15,22 @@
 
 //var letterTest = String.fromCharCode(21 + Math.random() * (100 - 21));
 //console.log(letterTest);
+//
+// function passGen(num) {
+//   var password = "";
+//   var charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()";
+//
+//   for (i = 0; i < num; i++) {
+//     password += charset.charAt(Math.floor(Math.random() * charset.length));
+//   }
+//   console.log(password);
+// }
+//
+// passGen(10);
 
-function passGen(num) {
-  var password = "";
-  var charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()";
+let x = 150505050505
 
-  for (i = 0; i < num; i++) {
-    password += charset.charAt(Math.floor(Math.random() * charset.length));
-  }
-  console.log(password);
-}
-
-passGen(10);
+console.log(Math.random().toString(16).slice(2,8))
+console.log(Math.random())
+console.log(Math.random().toString(16))
+console.log(x.toString(16))
