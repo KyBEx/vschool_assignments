@@ -14,13 +14,18 @@ class App extends Component {
 
     }
 
-    submit() {
+    submit(e) {
         this.setState((prevState) => {
             // return prevState.names.push(prevState.value) don't do it this way
             // --.push returns the length of the original array, not an array or object--not sure how this is working
-            prevState.names.push(prevState.value)
-            return {names: prevState.names}
+            prevState.names.push(prevState.value);
+            // e.persist();
+            prevState.value= ""
+
+            return {names: prevState.names,
+                    value: prevState.value}
         })
+        e.preventDefault();
     }
 
     inputBox(event) {
@@ -45,8 +50,10 @@ class App extends Component {
 
         return (
             <div>
-                <input onChange={this.inputBox}></input>
-                <button onClick={this.submit}>Submit</button>
+                <form onSubmit={this.submit}>
+                    <input onChange={this.inputBox} value={this.state.value}></input>
+                    <button onClick={this.submit}>Submit</button>
+                </form>
                 {namesArray}
             </div>
         )
