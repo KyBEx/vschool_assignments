@@ -37,26 +37,17 @@ class App extends  Component {
             prevState.diet.push(target.title)
                 return {diet: prevState.diet}
             })
-        } else {
+        } else if (value === false) {
             this.setState(prevState => {
-            prevState.diet.push(prevState.diet.filter((item, i) => {
-                    if (item !== target.title) {
-                    return item
-                } else {
-                    this.setState(prevState => {
-                        {diet: prevState.diet.slice(i,1)}
-                    })
-                }
-                })
-            )
+                prevState.diet.splice(prevState.diet.indexOf(target.title), 1)
+                console.log(prevState.diet)
                 return {diet: prevState.diet}
-
+            })
+        } else {
+            this.setState({
+                [e.target.name]: value
             })
         }
-
-        this.setState({
-            [e.target.name]: value
-        })
     }
 
     // isTrue(e) {
