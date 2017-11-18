@@ -34,12 +34,12 @@ class App extends  Component {
         const value = target.type === "checkbox" ? target.checked : target.value;
         if (value === true) {
             this.setState(prevState => {
-            prevState.diet.push(target.title)
+            prevState.diet.push(target.value)
                 return {diet: prevState.diet}
             })
         } else if (value === false) {
             this.setState(prevState => {
-                prevState.diet.splice(prevState.diet.indexOf(target.title), 1)
+                prevState.diet.splice(prevState.diet.indexOf(target.value), 1)
                 console.log(prevState.diet)
                 return {diet: prevState.diet}
             })
@@ -83,9 +83,9 @@ class App extends  Component {
                 </select>
                 <br/>
                 Dietary Restrictions: <br/>
-                Vegan: <input id="1" onChange={this.input} title="Vegan" type ="checkbox"/> <br/>
-                Kosher: <input id="2" onChange={this.input} title=" Kosher" type="checkbox"/><br/>
-                Halal: <input id="3" onChange={this.input} title=" Halal" type="checkbox"/><br/>
+                Vegan: <input id="1" onChange={this.input} value=" Vegan" type ="checkbox"/> <br/>
+                Kosher: <input id="2" onChange={this.input} value=" Kosher" type="checkbox"/><br/>
+                Halal: <input id="3" onChange={this.input} value=" Halal" type="checkbox"/><br/>
                 <button onClick={this.submit}>Submit</button>
             </form>
 
