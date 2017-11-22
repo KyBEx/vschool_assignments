@@ -83,7 +83,7 @@ export default function Form (props) {
 
 
     return (
-        <fieldset style={style.fieldset}>
+        <fieldset id ="fieldset" style={style.fieldset}>
         <h1 style={style.h1}>Gaming Accomplishments</h1>
         <form>
             <input className = "input3" style ={style.input} type="text" placeholder="Enter name here" ></input>

@@ -29,7 +29,7 @@ export default class App extends Component {
         }
 
         return (
-            <div style={style.div}>
+            <div id="main" style={style.div}>
                 <Form/>
             </div>
             // box for inserting trash talk
