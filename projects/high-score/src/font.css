@@ -1,0 +1,14 @@
+@import url("http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext");
+
+::placeholder {
+    color: black;
+    font-size: 15px;
+    text-align: center;
+
+}
+
+@media max-width: 768 px {
+    fieldset {
+        width: 500px;
+    }
+}
