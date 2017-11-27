@@ -8,8 +8,10 @@ function Picture (props) {
             height: "200px",
             width: "175px",
             backgroundImage: `url(${props.info.image})`,
-            backgroundSize: "175px",
+            // backgroundSize: "175px 200px",
+            backgroundSize: "380px , 200px",
             backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
             position:"relative",
             margin: "25px",
             display: "inline-block"
