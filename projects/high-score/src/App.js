@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import Form from "./Form";
-import Button from "./Button";
+import DisplayBox from "./DisplayBox";
+import Button2 from "./Button2";
 import './font.css';
 
 export default class App extends Component {
@@ -12,11 +13,14 @@ export default class App extends Component {
             date: "",
             score: "",
             trash: "",
-            display: []
+            display: "hidden",
+            button2: "Show Scores",
+            checked: false
         }
         this.add = this.add.bind(this);
         this.submit = this.submit.bind(this);
-        this.scores = this.scores.bind(this);
+        this.show = this.show.bind(this);
+        this.checked = this.checked.bind(this);
     }
 
     add(e) {
@@ -28,12 +32,8 @@ export default class App extends Component {
     submit(e) {
         localStorage.setItem(`${this.state.name}${this.state.game}
             ${this.state.score}`, JSON.stringify(this.state));
-            // let myValue = localStorage.getItem(`${this.state.name}${this.state.game}
-            // ${this.state.date}${this.state.score}`)
-            // console.log(typeof JSON.parse(myValue))
-        this.setState(prevState => {
 
-            // prevState.display.push(JSON.parse(myValue))
+        this.setState(prevState => {
 
             return (
                 {
@@ -41,16 +41,51 @@ export default class App extends Component {
             game: "",
             date: "",
             score: "",
-            trash: "",
-            display: prevState.display
+            checked: false,
+            trash: ""
             }
         )
     })
         e.preventDefault();
     }
 
-    scores() {
-        console.log("test");
+    show(e) {
+        e.preventDefault();
+        if (this.state.display === "hidden") {
+            this.setState(prevState => {
+                prevState.display = "visible";
+                return ({display: prevState.display,
+                        button2: "Hide Scores"})
+            })
+        } else {
+            this.setState(prevState => {
+                prevState.display = "hidden";
+                return ({display: prevState.display,
+                        button2: "Show Scores"})
+            })
+        }
+
+    }
+
+    checked () {
+        if (this.state.checked === false) {
+            this.setState(prevState => {
+                prevState.checked = true;
+                const trashTalk = ["I find your lack of faith disturbing", "We're the Ottomans and you're not", "Slider, you stink"]
+                prevState.trash = trashTalk[Math.floor(Math.random() * trashTalk.length)]
+                return ({checked: prevState.checked,
+                        trash: prevState.trash});
+            });
+        } else {
+            this.setState(prevState => {
+                prevState.checked = false;
+                prevState.trash = ""
+                return ({checked: prevState.checked,
+                        trash: prevState.trash})
+            })
+        }
+
+
     }
 
     render() {
@@ -64,7 +99,9 @@ export default class App extends Component {
 
         return (
             <div id="main" style={style.div}>
-                <Form add= {this.add} submit={this.submit} scores={this.scores}  value={this.state}/>
+                <Form checker = {this.checked} add= {this.add} submit={this.submit} show={this.show}  value={this.state}/>
+                <Button2 show={this.show} value={this.state}/>
+                <DisplayBox display={this.state}/>
             </div>
             // box for inserting trash talk
             // box that displays results
