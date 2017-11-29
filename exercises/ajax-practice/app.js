@@ -8,7 +8,9 @@ myRequest.onload = function () {
         let node = document.createTextNode(object.name);
         para.appendChild(node)
         document.getElementById('ref').insertAdjacentElement("beforeend", para)
+
     })
+
 
 
 };
