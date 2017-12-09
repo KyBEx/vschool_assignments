@@ -9,15 +9,16 @@ let fruits = [
         price: "0.5"
     },
     {
-        type: "apple",
-        brand: "gala",
-        price: "0.5"
+        type: "banana",
+        brand: "dole",
+        price: "0.7"
     },
     {
-        type: "orange",
-        brand: "naval",
-        price: "0.75"
-    },
+        type: "apple",
+        brand: "chiquita",
+        price: "0.5"
+    }
+
 
 ]
 
@@ -27,21 +28,21 @@ app.listen(3000, ()=> {
 
 
 app.get("/fruit", (req, res) => {
+    console.log(req.query)
 
     let resp = fruits.filter((fruit,i) => {
+        let allMatch = true
         for (key in req.query) {
-            if (fruits[i][key] === req.query[key]) {
-                console.log(fruits[i][key])
-                return fruits[i][key]
-            } else {
+            if (fruits[i][key] !== req.query[key]) {
                 return false
             }
         }
+        return allMatch
     })
 
     let safety = Object.keys(req.query)
     !safety.length ? resp.push(...fruits) : null
-    !resp.length ? resp.push({msg: "that item is not available"}) : null
+    !resp.length ? resp.push({msg: "that item or search parameter is not available"}) : null
 
 
     res.send(resp)
