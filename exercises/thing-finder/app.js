@@ -31,18 +31,18 @@ app.get("/fruit", (req, res) => {
     console.log(req.query)
 
     let resp = fruits.filter((fruit,i) => {
-        let allMatch = true
+        let match = true
         for (key in req.query) {
             if (fruits[i][key] !== req.query[key]) {
                 return false
             }
         }
-        return allMatch
+        return match
     })
 
-    let safety = Object.keys(req.query)
-    !safety.length ? resp.push(...fruits) : null
-    !resp.length ? resp.push({msg: "that item or search parameter is not available"}) : null
+    let searchParams = Object.keys(req.query)
+    !searchParams.length ? resp.push(...fruits) : null
+    resp.length ? null : resp.push({msg: "that item or search parameter is not available"})
 
 
     res.send(resp)
