@@ -1,4 +1,5 @@
 function findDiff(arr1, ...arrs) {
+    console.log(arrs)
     const combinedArgs = [].concat.apply([], arrs);
     arr1.push(...combinedArgs)
     const unique = arr1.filter(item => {

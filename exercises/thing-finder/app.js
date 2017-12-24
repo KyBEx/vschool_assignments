@@ -22,8 +22,8 @@ let fruits = [
 
 ]
 
-app.listen(3000, ()=> {
-    console.log("Running port 3000")
+app.listen(3500, ()=> {
+    console.log("Running port 3500")
 });
 
 
