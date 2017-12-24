@@ -12,4 +12,4 @@ var hasTeen=function(a, b, c){
 
 }
 
-console.log(hasTeen(1,3,4))
+console.log(hasTeen(1,3,4, 13))
