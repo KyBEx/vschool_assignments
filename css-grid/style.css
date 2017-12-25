@@ -17,7 +17,6 @@
 .box {
     height: 100%;
     width: 100%;
-    display: inline-block;
     background-color: grey;
 
 }
@@ -35,11 +34,15 @@ body {
     grid-column-start: 1;
     grid-column-end: 3;
     height: 300px;
+    background-image: url(http://www.csszengarden.com/214/contours.png), url(http://www.csszengarden.com/214/noise.png), url(http://www.csszengarden.com/214/gridlines.png), url(http://www.csszengarden.com/214/huntington.jpg);
+    background-position: 0 0, 0 0, -5px -25px, 0 35%;
+    background-size: auto,auto,auto,cover;
+    background-attachment: fixed, fixed, fixed, fixed;
 
 }
 
 .box1, .box2 {
-    background-color: black;
+    background-color: transparent;
 }
 
 .box2, .box4, .box6, .box8 {
@@ -53,13 +56,15 @@ body {
     margin: none;
 }
 
-.box1{
+.box-border {
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-
+    width: 100%;
 }
 
-.box-border {
-    margin-left: 15%;
+.box1 {
+    width: 100%;
 }
 
 #circle {
@@ -89,6 +94,47 @@ body {
 #head2{
     text-align: left;
     margin-top: 0px;
+    font-family: librebaskerville;
+    color: #A1B3B1;
+}
+
+.border-box-2{
+    margin: auto;
+    width: 100%;
+    transform: translateY(50%);
+}
+#viewall{
+    position: relative;
+    display: block;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255,255,255, .1);
+    border: none;
+    font-family: juliussansone;
+    z-index: 5;
+    color: rgba(255,255,255, 1);
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 70px;
+    width:75%;
+
+
+}
+
+#viewall:hover {
+    background: rgba(255,255,255, .3);
+    transition: all .5s linear 0s;
+}
+
+#viewall>p {
+    z-index: 5;
+    color: rgba(255,255,255, 1);
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0px;
 }
 
 
@@ -103,6 +149,7 @@ body {
     .row1 {
         grid-column-start: 1;
         grid-column-end: 2;
+        height: 250px;
     }
 
     .nested {
