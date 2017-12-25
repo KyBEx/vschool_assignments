@@ -1,0 +1,140 @@
+@font-face {
+    font-family: verdemoderna;
+    src: url(./fonts/verdemoderna.woff);
+}
+
+@font-face {
+    font-family: librebaskerville;
+    src: url(http://fonts.gstatic.com/s/librebaskerville/v5/QHIOz1iKF3bIEzRdDFaf5fbsUggLxuOzHNuXcSFlTaY.woff2);
+}
+
+@font-face {
+    font-family: juliussansone;
+    src: url(http://fonts.gstatic.com/s/juliussansone/v6/iU65JP9acQHPDLkdalCF7pbhOpL-vLTkIjCTuVYsuO0.woff2);
+}
+
+
+.box {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    background-color: grey;
+
+}
+
+body {
+    margin: 0px;
+}
+
+.nested {
+    display: grid;
+    grid-template-columns: 2fr 1fr
+}
+
+.row1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 300px;
+
+}
+
+.box1, .box2 {
+    background-color: black;
+}
+
+.box2, .box4, .box6, .box8 {
+    width: 100%;
+
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: none;
+}
+
+.box1{
+    text-align: center;
+
+}
+
+.box-border {
+    margin-left: 15%;
+}
+
+#circle {
+    position: relative;
+    height: 125px;
+    width: 125px;
+    transform: translateY(70%);
+    display: inline-block;
+}
+
+.header{
+    color: white;
+    position: relative;
+    display: inline-block;
+    margin-left: 30px;
+    transform: translateY(50%);
+}
+
+#head1{
+    font-family: juliussansone;
+    font-size: 50px;
+    text-align: left;
+    margin-bottom: 15px;
+
+}
+
+#head2{
+    text-align: left;
+    margin-top: 0px;
+}
+
+
+
+@media screen and (max-width: 1133px) {
+
+    #container {
+        display: grid;
+        grid-template-columns: 100%
+    }
+
+    .row1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .nested {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .box1{
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .box2 {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .box4 {
+        grid-row-start: 7;
+        grid-row-end: 8;
+    }
+
+    .box6 {
+        grid-row-start: 8;
+        grid-row-end: 9;
+    }
+
+    .box8 {
+        grid-row-start: 9;
+        grid-row-end: 10;
+    }
+}
