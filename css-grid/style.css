@@ -222,7 +222,37 @@ ul {
     background-color: rgba(109,154,131, .6);
 }
 
+.box7 {
+    background-color: white;
+}
 
+.box8 {
+    background-color: #E1EAE5;
+}
+
+.box9 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-image: url(http://www.csszengarden.com/214/contours.png), url(http://www.csszengarden.com/214/noise.png), url(http://www.csszengarden.com/214/gridlines.png), url(http://www.csszengarden.com/214/huntington.jpg);
+    background-size: auto, auto, auto, cover;
+    height: 300px;
+}
+
+.box10 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#footer-container {
+    text-align: center;
+    font-size: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#footer-text {
+    transform:translateY(50%);
+}
 @media screen and (max-width: 1133px) {
 
     #container {
@@ -302,18 +332,17 @@ ul {
     }
 
     .box4 {
-        grid-row-start: 7;
-        grid-row-end: 8;
-    }
-
-    .box6 {
         grid-row-start: 8;
         grid-row-end: 9;
     }
 
+    .box6 {
+        grid-row-start: 10;
+        grid-row-end: 11;
+    }
+
     .box8 {
-        grid-row-start: 9;
-        grid-row-end: 10;
+        visibility: hidden;
     }
 
     ul {
@@ -328,6 +357,16 @@ ul {
         text-align: center;
     }
 
+    .box9 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .box10 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
 }
 
 @media screen and (max-width: 999px) {
@@ -338,6 +377,10 @@ ul {
         padding-left: 40px;
         font-size: 15px;
         text-align: center;
+    }
+
+    #footer-text {
+        transform:translateY(25%);
     }
 }
 
@@ -351,6 +394,22 @@ ul {
         padding-left: 40px;
         font-size: 15px;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 751px) {
+    #footer-container {
+        font-size: 40px;
+    }
+
+}
+
+@media screen and (max-width: 588px) {
+    #footer-text {
+        transform:translateY(15%);
+    }
+    #footer-container {
+        font-size: 30px;
     }
 }
 
