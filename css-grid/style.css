@@ -177,6 +177,11 @@ body {
     margin-top: 40px;
 }
 
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+
 
 
 .option-header {
@@ -198,8 +203,8 @@ body {
 }
 
 .option-header:hover, .author:hover {
-    color: blue;
-    cursor: pointer;
+    color: darkblue;
+    cursor:
 
 }
 
