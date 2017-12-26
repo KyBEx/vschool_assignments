@@ -164,7 +164,7 @@ body {
     background-color: #E1EAE5;
 }
 
-.box4 li {
+.box4 li , .box6 li {
     list-style: none;
     margin-left: 80px;
     margin-bottom: 40px;
@@ -173,8 +173,12 @@ body {
     border-bottom: solid #c0cac3 1px;
 }
 
-.box4 li:first-child {
+.box4 li:first-child, .box6 li:first-child {
     margin-top: 40px;
+}
+
+.box6 li {
+    border-bottom: dotted grey 1px;
 }
 
 ul {
@@ -204,8 +208,18 @@ ul {
 
 .option-header:hover, .author:hover {
     color: darkblue;
-    cursor:
+    cursor: pointer;
 
+}
+
+.box5, .box6{
+    background-color: rgba(138,188,159,0.5);
+    background-image: url(http://www.csszengarden.com/214/contours-opaque.png), url(http://www.csszengarden.com/214/gridlines-opaque.png), url(http://www.csszengarden.com/214/bamboo.png);
+    background-attachment: scroll, scroll, fixed;
+}
+
+.box6{
+    background-color: rgba(109,154,131, .6);
 }
 
 
@@ -305,7 +319,7 @@ ul {
     ul {
         font-size: 0em;
     }
-    .box4 li {
+    .box4 li, .box6 li {
         display: inline-block;
         width: 46%;
         margin-left: 0px;
@@ -317,7 +331,7 @@ ul {
 }
 
 @media screen and (max-width: 999px) {
-    .box4 li {
+    .box4 li , .box6 li{
         display: inline-block;
         width: 45%;
         margin-left: 0px;
@@ -327,19 +341,10 @@ ul {
     }
 }
 
-@media screen and (max-width: 999px) {
-    .box4 li {
-        display: inline-block;
-        width: 44%;
-        margin-left: 0px;
-        padding-left: 40px;
-        font-size: 15px;
-        text-align: center;
-    }
-}
 
-@media screen and (max-width: 666px) {
-    .box4 li {
+
+@media screen and (max-width: 799px) {
+    .box4 li , .box6 li{
         display: inline-block;
         width: 43%;
         margin-left: 0px;
@@ -350,7 +355,7 @@ ul {
 }
 
 @media screen and (max-width: 666px) {
-    .box4 li {
+    .box4 li, .box6 li {
         display: inline-block;
         width: 42%;
         margin-left: 0px;
@@ -360,8 +365,10 @@ ul {
     }
 }
 
+
+
 @media screen and (max-width: 499px) {
-    .box4 li {
+    .box4 li , .box6 li{
         display: inline-block;
         width: 41%;
         margin-left: 0px;
@@ -423,11 +430,11 @@ ul {
 }
 
 @media screen and (max-width: 445px) {
-    .box4 li {
+    .box4 li , .box6 li{
         display: inline-block;
-        width: 40%;
+        width: 45%;
         margin-left: 0px;
-        padding-left: 40px;
+        padding-left: 20px;
         font-size: 15px;
         text-align: center;
     }
