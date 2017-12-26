@@ -301,6 +301,74 @@ ul {
         grid-row-start: 9;
         grid-row-end: 10;
     }
+
+    ul {
+        font-size: 0em;
+    }
+    .box4 li {
+        display: inline-block;
+        width: 46%;
+        margin-left: 0px;
+        padding-left: 40px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 999px) {
+    .box4 li {
+        display: inline-block;
+        width: 45%;
+        margin-left: 0px;
+        padding-left: 40px;
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .box4 li {
+        display: inline-block;
+        width: 44%;
+        margin-left: 0px;
+        padding-left: 40px;
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 666px) {
+    .box4 li {
+        display: inline-block;
+        width: 43%;
+        margin-left: 0px;
+        padding-left: 40px;
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 666px) {
+    .box4 li {
+        display: inline-block;
+        width: 42%;
+        margin-left: 0px;
+        padding-left: 40px;
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .box4 li {
+        display: inline-block;
+        width: 41%;
+        margin-left: 0px;
+        padding-left: 40px;
+        font-size: 15px;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 485px){
@@ -351,5 +419,16 @@ ul {
         font-family: librebaskerville;
         color: #A1B3B1;
         font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 445px) {
+    .box4 li {
+        display: inline-block;
+        width: 40%;
+        margin-left: 0px;
+        padding-left: 40px;
+        font-size: 15px;
+        text-align: center;
     }
 }
