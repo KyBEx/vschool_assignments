@@ -241,6 +241,23 @@ ul {
 .box10 {
     grid-column-start: 1;
     grid-column-end: 3;
+    font-family: verdemoderna;
+    text-align: center;
+    background-color: #143A3E;
+    color: #8A9D9F;
+    height: 200px;
+    font-size: 75px;
+    line-height: 200px;
+}
+
+.box10 li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 5%;
+}
+
+.box10 li:last-child {
+    margin-right: 0px;
 }
 
 #footer-container {
@@ -422,9 +439,12 @@ ul {
         font-size: 15px;
         text-align: center;
     }
+
+@media screen and (max-width: 600px) {
+    .box10 {
+        font-size: 60px;
+    }
 }
-
-
 
 @media screen and (max-width: 499px) {
     .box4 li , .box6 li{
@@ -496,5 +516,9 @@ ul {
         padding-left: 20px;
         font-size: 15px;
         text-align: center;
+    }
+
+    .box10 {
+        font-size: 40px;
     }
 }
